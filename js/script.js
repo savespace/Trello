@@ -45,7 +45,7 @@ $(function() {
 	}
 			Column.prototype = {
 			addCard: function(card) {
-				this.$element.childred('ul').append(card.$element);
+				this.$element.children('ul').append(card.$element);
 			},
 			removeColumn: function() {
 				this.$element.remove();
@@ -63,8 +63,8 @@ $(function() {
 			function createCard() {
 // CREATING THE BLOCKS
 				var $card = $('<li>').addClass('card');
-				var $cardDescription = $('<p>').addClass('card-description').text(self.card-description);
-				var $cardDelete = $('<button').addClass('btn-delete').text('x');
+				var $cardDescription = $('<p>').addClass('card-description').text(self.description);
+				var $cardDelete = $('<button>').addClass('btn-delete').text('x');
 
 // PRZYPIĘCIE ZDARZENIA
 				$cardDelete.click(function() {
